@@ -4,4 +4,4 @@ Collection of the performance of works done by different teams in Policy2Code ch
 ## Collection of teams, domains and evaluation method/datasets
 |Team|Focused Domain|Evaluation|Notes|
 |----|--------------|----------|-----|
-|SSI | SSI/SSDI     |Placeholder|Note|
+|SSI | SSI/SSDI     |Manually check the answer to question is reasonable based on [document](.)|Note|
