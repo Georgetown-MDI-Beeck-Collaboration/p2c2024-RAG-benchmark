@@ -12,4 +12,4 @@ Single round Q&A, compare to human response.
 
 # Test dataset
 - test-cases.jsonl
-- scenario-test-cases.jsonl
+- [scenario-test-cases.jsonl](scenario-test-cases.jsonl)
