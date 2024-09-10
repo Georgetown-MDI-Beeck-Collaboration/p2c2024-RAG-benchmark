@@ -1,9 +1,16 @@
 # The performance of different approaches on SSI/SSDI
 Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/Future-House/paper-qa)) seem to be the best in `NaiveRAG`, `GraphRAG` and so far.
 
-![A bar chart of scores on test cases]()
+## Basic test cases (F1 score)
+|Approach   |F1 score          |
+|-----------|------------------|
+|NaiveRAG   |0.8311688311688312|
+|AdvancedRAG|0.9166666666666666|
+|GraphRAG   |0.7878787878787877|
+|KB-RAG     |0.878048780487805 |
 
-## Scenario test cases (ROUGE)
+
+## Scenario test cases (ROUGE score)
 |Approach   |rouge1             |rouge2              |rougeL             |rougeLsum          |
 |-----------|-------------------|--------------------|-------------------|-------------------|
 |NaiveRAG   |0.10638972974600375|0.03332123277906021 |0.07092772930309406|0.09179419033228833|
