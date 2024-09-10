@@ -1,5 +1,5 @@
 # The performance of different approaches on SSI/SSDI
-Conclusion:
+Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/Future-House/paper-qa)) seem to be the best in `NaiveRAG`, `GraphRAG` and so far.
 
 ![A bar chart of scores on test cases]()
 
@@ -17,11 +17,13 @@ Would be great if we can also add the baseline of `Policy Engine`, `RAPTOR` and 
 > 💡 Add prompt `Answer the question with yes or no.` before question will simplify the benchmark task.  
 
 ## Naive RAG
-Basic RAG, question is used to query vector storage of POMS document and get top 25 chunks to be used as a part of context for LLM to answer the question.
+Basic RAG, question is used to query vector storage of POMS document and get top 25 chunks to be used as a part of context for LLM to answer the question. {arxiv:2312.10997}
 ## AdvancedRAG
-We used [PaperQA implementation](https://github.com/Future-House/paper-qa).
+We used [PaperQA implementation](https://github.com/Future-House/paper-qa). {arXiv:2312.07559}
 ## GraphRAG
-We used [Microsoft GraphRAG implementation](https://github.com/microsoft/graphrag).
+We used [Microsoft GraphRAG implementation](https://github.com/microsoft/graphrag). {arXiv:2404.16130}
+## KB-RAG
+We added Prolog for [Program of Thoughts](https://github.com/TIGER-AI-Lab/Program-of-Thoughts). {arxiv:2211.12588}
 
 # Test method
 Single round Q&A, compare to human response.
@@ -30,5 +32,6 @@ Single round Q&A, compare to human response.
 * Metric 2 `ROUGE`.
 
 # Test dataset
+- [POMS document](doc.md)
 - [test-cases.jsonl](test-cases.jsonl)
 - [scenario-test-cases.jsonl](scenario-test-cases.jsonl)
