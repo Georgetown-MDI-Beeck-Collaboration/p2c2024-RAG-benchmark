@@ -21,8 +21,6 @@ Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/F
 # Approaches
 Would be great if we can also add the baseline of `Policy Engine`, `RAPTOR` and other approaches.
 
-> 💡 Add prompt `Answer the question with yes or no.` before question will simplify the benchmark task.  
-
 ## Naive RAG
 Basic RAG, question is used to query vector storage of POMS document and get top 25 chunks to be used as a part of context for LLM to answer the question. {arxiv:2312.10997}
 ## AdvancedRAG
@@ -39,6 +37,9 @@ Single round Q&A, compare to human response.
 * Metric 2 `ROUGE`.
 
 # Test dataset
-- [POMS document](doc.md)
-- [test-cases.jsonl](test-cases.jsonl)
-- [scenario-test-cases.jsonl](scenario-test-cases.jsonl)
+- Knowledge input: [POMS document](doc.md)
+- Questions and target answers:
+  - [test-cases.jsonl](test-cases.jsonl)
+  - [scenario-test-cases.jsonl](scenario-test-cases.jsonl)
+
+> 💡 For `test-cases.jsonl`, add prompt `Answer the question with yes or no.` before question will simplify the benchmark task.
