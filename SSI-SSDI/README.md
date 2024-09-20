@@ -1,14 +1,14 @@
 # The performance of different approaches on SSI/SSDI
-Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/Future-House/paper-qa)) seem to be the best in `NaiveRAG`, `GraphRAG` and so far.
+Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/Future-House/paper-qa)) seem to be the best in `NaiveRAG`, `GraphRAG` and `Logic LLM (with RAG)`.
 
 ## Basic test cases (F1 score)
-|Approach   |F1 score          |
-|-----------|------------------|
-|NaiveRAG   |0.8311688311688312|
-|AdvancedRAG|0.9166666666666666|
-|GraphRAG   |0.7878787878787877|
-|KB-RAG     |0.878048780487805 |
-
+|Approach               |F1 score          |
+|-----------------------|------------------|
+|Policy Engine(baseline)|0.4634146341      |
+|NaiveRAG               |0.8311688311688312|
+|AdvancedRAG            |0.9166666666666666|
+|GraphRAG               |0.7878787878787877|
+|Logic LLM              |0.878048780487805 |
 
 ## Scenario test cases (ROUGE score)
 |Approach   |rouge1             |rouge2              |rougeL             |rougeLsum          |
@@ -16,25 +16,32 @@ Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/F
 |NaiveRAG   |0.10638972974600375|0.03332123277906021 |0.07092772930309406|0.09179419033228833|
 |AdvancedRAG|0.22694791192729363|0.0610002691993031  |0.14573577658754394|0.14553024242745344|
 |GraphRAG   |0.1262765092746989 |0.033861502970296505|0.08621287227334787|0.10267322829949359|
-|KB-RAG     |0.09550044274878426|0.018672250657445558|0.06790505095745589|0.08147286797283657|
+|Logic LLM  |0.09550044274878426|0.018672250657445558|0.06790505095745589|0.08147286797283657|
 
 # Approaches
-Would be great if we can also add the baseline of `Policy Engine`, `RAPTOR` and other approaches.
+Would be great if we can also add `RAPTOR` and other approaches.
 
+## PolicyEngine
+The baseline [expert system coded by human](https://github.com/PolicyEngine).
+
+> ℹ️ PolicyEngine produced 100% correct answer if we do not count `not sure` cases as wrong answer.
 ## Naive RAG
 Basic RAG, question is used to query vector storage of POMS document and get top 25 chunks to be used as a part of context for LLM to answer the question. {arxiv:2312.10997}
 ## AdvancedRAG
 We used [PaperQA implementation](https://github.com/Future-House/paper-qa). {arXiv:2312.07559}
 ## GraphRAG
 We used [Microsoft GraphRAG implementation](https://github.com/microsoft/graphrag). {arXiv:2404.16130}
-## KB-RAG
-We added Prolog for [Program of Thoughts](https://github.com/TIGER-AI-Lab/Program-of-Thoughts). {arxiv:2211.12588}
+## Logic LLM with RAG
+We added RAG for [Logic-LLM](https://github.com/teacherpeterpan/Logic-LLM). {arXiv:2305.12295}  
+Or say We added Prolog and RAG for [Program of Thoughts](https://github.com/TIGER-AI-Lab/Program-of-Thoughts). {arxiv:2211.12588}
 
 # Test method
 Single round Q&A, compare to human response.
 
-* Metric 1 compare if prediction and target in same category `yes`, `no`, `maybe`.
+* Metric 1 compare if prediction and target in same category `yes`, `no` (we allow predict of `not sure`).
 * Metric 2 `ROUGE`.
+
+> ⚠️ It is important to know that we count all `not sure` as wrong answer.
 
 # Test dataset
 - Knowledge input: [POMS document](doc.md)
