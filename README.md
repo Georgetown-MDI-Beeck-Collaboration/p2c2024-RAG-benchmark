@@ -23,15 +23,13 @@ gantt
     dateFormat  X
     axisFormat %s
 
-    section No RAG, No Prompt
-    TestRun1         : 0, 36.5
+    section No RAG/Prompt
+    TestRun1         : 0, 37
     TestRun1_        : 0, 32
-
-    section No RAG, With Prompt
+    section Only Prompt
     TestRun2         : 0, 60
-    TestRun2_LC      : 0, 67.5
-
-    section With RAG, With Prompt
+    TestRun2_LC      : 0, 68
+    section RAG+Prompt
     TestRun3         : 0, 89
     TestRun4_LC      : 0, 91
 ```
@@ -57,7 +55,7 @@ gantt
     section Logic LLM
     Simple MC (F1)         : 0, 88
     Short QA (ROUGE-1)   : 0, 10
-    section PolicyEngine*
+    section *PolicyEngine
     Simple MC (F1)         : 0, 45
     Short QA (ROUGE-1)   : 0, 0
 ```
