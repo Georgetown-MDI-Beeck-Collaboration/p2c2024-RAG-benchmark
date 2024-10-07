@@ -1,5 +1,4 @@
 # Collections
-> ⚠️This repository is still WIP🚧
 ## Performance of LLMs
 Contributed by BDO Canada
 | | Llama 70B | GPT4o + Property Graph | Gemini 1.5 + Property Graph | Gemini 1.5 Direct Query |
@@ -43,20 +42,25 @@ gantt
     dateFormat  X
     axisFormat %s
 
+    section *Perplexity
+    Simple MC (F1)         : 0, 98
+    Short QA (ROUGE-1)   : 0, 3
     section Naive RAG
-    Simple MC (F1)         : 0, 83
+    Simple MC (F1)         : 0, 88
     Short QA (ROUGE-1)   : 0, 11
     section PaperQA
-    Simple MC (F1)         : 0, 92
+    Simple MC (F1)         : 0, 90
     Short QA (ROUGE-1)   : 0, 22
     section GraphRAG
-    Simple MC (F1)         : 0, 79
+    Simple MC (F1)         : 0, 65
     Short QA (ROUGE-1)   : 0, 13
     section Logic LLM
     Simple MC (F1)         : 0, 88
     Short QA (ROUGE-1)   : 0, 10
-    section *PolicyEngine
+    section **PolicyEngine
     Simple MC (F1)         : 0, 45
     Short QA (ROUGE-1)   : 0, 0
 ```
-> *We counted "Didn't answer" as incorrect for all models in our F1 score. PolicyEngine got 100% correct in 45 questions and not able to answer other questions as knowledge not implemented by the developer team yet. 0 in short QA just because not yet able to answer short QA before next upgrade.
+> *Baseline model, the Short QA using ROUGE-1 may not clearly shows the quality of answer for short QA. 🚧 We will replace it with a large language model judge.
+
+> **We counted "Didn't answer" as incorrect for all models in our F1 score. PolicyEngine got 100% correct in 45 questions and not able to answer other questions as knowledge not implemented by the developer team yet. 0 in short QA just because not yet able to answer short QA before next upgrade.
