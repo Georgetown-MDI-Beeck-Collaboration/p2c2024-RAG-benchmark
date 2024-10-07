@@ -2,13 +2,14 @@
 Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/Future-House/paper-qa)) seem to be the best in `NaiveRAG`, `GraphRAG` and `Logic LLM (with RAG)`.
 
 ## Basic test cases (F1 score)
-|Approach               |F1 score          |
-|-----------------------|------------------|
-|Policy Engine(baseline)|0.4634146341      |
-|NaiveRAG               |0.8311688311688312|
-|AdvancedRAG            |0.9166666666666666|
-|GraphRAG               |0.7878787878787877|
-|Logic LLM              |0.878048780487805 |
+|Approach               |F1 score    |
+|-----------------------|------------|
+|Policy Engine          |0.4473684211|
+|Perplexity.ai(baseline)|0.9827586207|
+|NaiveRAG               |0.8793103448|
+|AdvancedRAG            |0.8965517241|
+|GraphRAG               |0.6551724138|
+|Logic LLM              |0.8793103448|
 
 ## Scenario test cases (ROUGE score)
 |Approach   |rouge1             |rouge2              |rougeL             |rougeLsum          |
@@ -21,8 +22,11 @@ Conclusion: `AdvancedRAG` (We used [PaperQA implementation](https://github.com/F
 # Approaches
 Would be great if we can also add `RAPTOR` and other approaches.
 
+## Perplexity.ai
+The baseline LLM [solution with web search integrated](https://perplexity.ai).
+
 ## PolicyEngine
-The baseline [expert system coded by human](https://github.com/PolicyEngine).
+The [expert system coded by human](https://github.com/PolicyEngine).
 
 > ℹ️ PolicyEngine produced 100% correct answer if we do not count `not sure` cases as wrong answer.
 ## Naive RAG

@@ -13,7 +13,13 @@
 {"question": "Can an American Indian born in Canada be eligible for SSI?", "answer": true}
 {"question": "Is a noncitizen member of a federally recognized Indian tribe potentially eligible for SSI?", "answer": true}
 {"question": "Is it possible for some noncitizens to receive SSI for up to 7 years?", "answer": true}
+{"question": "Can a noncitizen earn work credits based on the amount of money they have earned?", "answer": true}
+{"question": "Is a current Form I-94 (arrival/departure record) an acceptable proof of noncitizen status when applying for SSI?", "answer": true}
 {"question": "Can a Form I-551 (lawful permanent resident card) be used as proof of noncitizen status for SSI application?", "answer": true}
+{"question": "Is an order from an immigration judge withholding deportation or granting asylum acceptable proof of noncitizen status for SSI?", "answer": true}
+{"question": "Can U.S. military discharge papers (DD Form 214) showing honorable discharge be used as proof of military service for SSI eligibility?", "answer": true}
+{"question": "If a noncitizen's SSI payments stop due to ineligibility, can they apply again if their immigration status changes?", "answer": true}
+{"question": "Can a noncitizen apply for SSI again if they become a U.S. citizen?", "answer": true}
 {"question": "Are U.S. citizens potentially eligible for SSI?", "answer": true}
 {"question": "Can Lawful Permanent Residents (LPRs) who are blind or disabled and were lawfully residing in the U.S. on 8/22/96 be potentially eligible for SSI?", "answer": true}
 {"question": "Are LPRs who were lawfully residing in the U.S. and receiving SSI benefits on 8/22/96 potentially eligible for SSI?", "answer": true}
@@ -23,36 +29,29 @@
 {"question": "Are qualified aliens who were lawfully residing in the U.S. on 8/22/96 and later become disabled potentially eligible for SSI?", "answer": true}
 {"question": "Do LAPR aliens qualify for SSI if they are blind or disabled and were lawfully residing in the U.S. on 8/22/96?", "answer": true}
 {"question": "Is there a maximum eligibility period for certain qualified aliens?", "answer": true}
-{"question": "Are there specific quarters of earnings that can affect LAPR eligibility for SSI?", "answer": true}
 {"question": "Can a spouse or dependent child of a veteran qualify for SSI?", "answer": true}
-{"question": "Can individuals who were lawfully admitted for permanent residence before 8/22/96 retain eligibility?", "answer": true}
 {"question": "Can a qualified alien lose eligibility if their immigration status changes?", "answer": true}
 {"question": "Do conditions of eligibility vary for different categories of qualified aliens?", "answer": true}
 {"question": "Can a recipient of SSI benefits appeal a loss of eligibility based on the 7-year rule?", "answer": true}
 {"question": "Can LAPR aliens who were granted status after 8/22/96 be eligible under certain conditions?", "answer": true}
 {"question": "Can the status of an alien affect their eligibility for SSI?", "answer": true}
+{"question": "Are there specific requirements for eligibility based on income and resources for SSI?", "answer": true}
 {"question": "Are SSI eligibility criteria consistent across different types of aliens?", "answer": false}
 {"question": "Is a U.S. citizen never potentially eligible for SSI?", "answer": false}
-{"question": "Can American Indians born in Canada without 50% Indian blood qualify for SSI?", "answer": false}
 {"question": "Do LAPR aliens qualify for SSI only if they are not blind or disabled and were not lawfully residing in the U.S. on 8/22/96?", "answer": false}
 {"question": "Are veterans or active duty members of the Armed Forces ineligible for SSI?", "answer": false}
 {"question": "Is there no exception for nonqualified aliens who were receiving SSI benefits on 8/22/96?", "answer": false}
 {"question": "Are asylees ineligible for SSI if they meet certain conditions?", "answer": false}
 {"question": "Is a Cuban/Haitian entrant never potentially eligible for SSI?", "answer": false}
-{"question": "Are Amerasian immigrants not considered LAPR under SSI rules?", "answer": false}
 {"question": "Is a battered alien or their child ineligible for SSI under any conditions?", "answer": false}
 {"question": "Does being a qualified alien automatically ensure SSI eligibility?", "answer": false}
 {"question": "Are aliens lawfully residing in the U.S. on 8/22/96 who are not blind or disabled eligible for SSI?", "answer": false}
 {"question": "Are aliens granted conditional entry always ineligible for SSI?", "answer": false}
 {"question": "Is there no maximum eligibility period for certain qualified aliens?", "answer": false}
 {"question": "Are aliens without 40 qualifying quarters never eligible for SSI?", "answer": false}
-{"question": "Do individuals who were lawfully admitted for permanent residence after 8/22/96 retain eligibility?", "answer": false}
-{"question": "Can individuals with a history of PRUCOL status never qualify for SSI?", "answer": false}
 {"question": "Are individuals receiving SSI and experiencing a change in alien status always ineligible for continued benefits?", "answer": false}
 {"question": "Do veterans and active duty members have the same eligibility criteria for SSI as non-veterans?", "answer": false}
-{"question": "Are there no provisions for certain nonqualified aliens under SSI rules?", "answer": false}
 {"question": "Are individuals with lawful temporary resident status always eligible for SSI?", "answer": false}
 {"question": "Are conditions of eligibility the same for all categories of qualified aliens?", "answer": false}
-{"question": "Can a recipient of SSI benefits not appeal a loss of eligibility based on the 7-year rule?", "answer": false}
 {"question": "Can the status of an alien never affect their eligibility for SSI?", "answer": false}
 {"question": "Are there no specific requirements for eligibility based on income and resources for SSI?", "answer": false}
